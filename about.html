@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>The Online Closet</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>The Online Closet</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="/index.html">Home</a>
+            <li><a href="#service-page">Store</a> 
+            <li><a href="#">About</a>
+            <li><a href="#footer-page">Contact</a>   
+            <li><a href="/cart.html"><button class="cart-button"></button></a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    <div class="about-main">
+        <h1>About Us</h1>
+        <h4>Welcome to The Online Closet, where fashion meets creativity and individuality finds its perfect expression. We are an online clothing store dedicated to bringing you the finest selection of t-shirts designed for men and women aged 15 to 65. Our mission is to offer more than just clothing; we aim to provide a canvas for self-expression, a touch of artistry, and a celebration of style that suits every personality and preference.</h4>
+        <br>
+        <h2>Our Story</h2>
+        <h4>At The Online Closet, our journey began with a simple idea: to redefine the everyday t-shirt. We noticed a gap in the market for high-quality, beautifully designed t-shirts that cater to a broad demographic. Inspired by the belief that everyone deserves to wear something that not only fits well but also makes a statement, we set out to curate a collection that transcends age, trends, and conventional fashion norms.
+        Our team comprises passionate designers, creative thinkers, and fashion enthusiasts who believe that t-shirts are not just basics but a fundamental part of your personal style. Each design is thoughtfully crafted to offer both comfort and aesthetic appeal, making sure you look and feel great no matter the occasion.</h4>
+        <br>
+        <h2>Our Vision</h2>
+        <h4>Our vision is to be more than just a clothing store. We aspire to be a brand that inspires confidence and celebrates individuality. We envision a world where fashion is not limited by age or trends, but where each person can express their unique style through what they wear. By offering exceptional t-shirts that cater to a wide audience, we hope to contribute to a more inclusive and expressive fashion landscape.</h4>
+        <br>
+        <h2>Join Us</h2>
+        <h4>We invite you to explore our collection and discover the perfect t-shirt that resonates with your style. Whether you're looking for a casual everyday staple or a standout piece to elevate your wardrobe, [Your Store Name] is here to provide you with choices that reflect your personality and values. Stay connected with us on social media and sign up for our newsletter to be the first to know about new arrivals, exclusive offers, and fashion tips.
+        Thank you for choosing [Your Store Name]. We’re thrilled to be a part of your fashion journey and look forward to helping you express yourself with our exceptional t-shirts.</h4>
+    </div>
+
+
+    <div id="footer-page" class="footer-container">
+        <div class="footLeftSide">
+            <h1>The Online CLoset</h1>
+            <h4>Contact us: +91 9560 499769</h4>
+        </div>
+        <div class="footRightSide">
+            <ul>
+                <li><h3 class="footer-title">Useful links</h3></li>
+                <li>Home</li>
+                <li>Store</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+                <li><h3 class="footer-title">Social media</h3></li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Snapchat</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+    </div>
+    <p class="last-line">Designed by Gajender Singh</p>
+
+
+
+    <script src="items.js"></script>
+    <script>
+        let menuList = document.getElementById("menuList");
+        let cartButton = document.querySelector('.cart-button');
+        let bagList;
+        let bagListStr = localStorage.getItem('bagList');
+        bagList = bagListStr ? JSON.parse(bagListStr) : [];
+        displaybutton();
+
+
+        menuList.style.maxHeight = "0px";
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "400px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        function displaybutton() {
+            if (bagList.length > 0) {
+                cartButton.innerHTML = `Cart(${bagList.length})`;
+            }
+            else {
+                cartButton.innerHTML = 'Cart';
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+</html> 

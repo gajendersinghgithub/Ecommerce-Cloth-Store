@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Online Closet</title>
+</head>
+<body>
+
+    <!--        NAVBAR       -->
+    
+    <nav>
+        <div class="logo">
+            <h1>The Online Closet</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="#">Home</a>
+            <li><a href="#service-page">Store</a> 
+            <li><a href="./about.html">About</a>
+            <li><a href="#footer-page">Contact</a>   
+            <li><a href="./cart.html"><button class="cart-button"></button></a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    
+    <!--        HERO-MAIN        -->
+
+    <div class="hero">
+        <h1 class="hero-title">Welcome to <span class="hero-company-name">The Online Closet</span></h1>
+        <p class="hero-description">Stay stylish and on-trend with our latest collection of T-Shirts. Our online clothing store offers wide  range of trendy T-Shirts.</p>
+        <a href="#service-page" class="btn-go-to-store">Go To Store</a>
+        <a href="#footer-page" class="btn-contactus">Contact Us</a>
+    </div>
+    <div id="service-page" class="services">
+        <h1 class="services-title">Our Products</h1>
+        <div class="shopping-items"></div>
+    </div>
+
+    <!--        FOOTER       -->
+
+    <div id="footer-page" class="footer-container">
+        <div class="footLeftSide">
+            <h1>The Online Closet</h1>
+            <h4>Contact us: +91 9560 499769</h4>
+        </div>
+        <div class="footRightSide">
+            <ul>
+                <li><h3 class="footer-title">Useful links</h3></li>
+                <li>Home</li>
+                <li>Store</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+                <li><h3 class="footer-title">Social media</h3></li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Snapchat</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+    </div>
+    <p class="last-line">Designed by Gajender Singh</p>
+
+
+
+    <script src="items.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    border: 5px solid black;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+}
+    
+.logo{
+    color: black;
+    font-size: larger;
+}
+    
+ nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+    
+nav ul li{
+    list-style-type: none;
+}
+    
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}    
+nav ul li button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+}
+nav ul li button:hover {
+    background-color: rgb(46, 226, 202);
+    color: black;
+    border: 0px;
+}
+.menu-icon{
+    display: none;
+}
+    
+.menu-icon i{
+    color: black;
+    font-size: 30px;;
+}
+
+.hero {
+    /* background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/colorful-fabric-texture-background-rita-kapitulski.jpg"); */
+    background-image: url("./images/wallpaperflare.com_wallpaper.jpg"); 
+    /* background-image: url('./images/storeimg.png'); */
+    background-color: #cccccc; 
+    height: 80vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    text-align: center;
+}
+.hero-title {
+    margin:auto;
+    padding: 250px 0px 20px;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 20px #00e1ff;
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0accf7, 0 0 40px #0accf7, 0 0 50px #0accf7, 0 0 60px #0accf7, 0 0 70px #0accf7;    /* -webkit-animation: glow 1s ease-in-out infinite alternate; */
+    /* -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate; */ 
+}
+
+/* @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+} */
+
+.hero-company-name {
+    color: red;
+    text-shadow: 0 0 20px #ff0000;
+}
+.hero-description {
+    margin: auto;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #00e1ff;
+}
+.btn-go-to-store {
+    padding: 10px 45px;
+    margin: auto;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn-go-to-store:hover {
+    background-color: rgb(46, 226, 202);
+    color: black;
+    border: 0ch;
+}
+.btn-contactus {
+    padding: 10px 45px;
+    margin: auto;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn-contactus:hover {
+    background-color: rgb(46, 226, 202);
+    color: black;
+    border: 0ch;
+}
+.btn-bag {
+    padding-left: 25px;
+    padding-right: 30px;
+    font-weight: 700;
+    font-size: medium;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 0ch;
+}
+.btn-bag:hover {
+    background-color: rgb(46, 226, 202);
+    color: black;
+}
+.services-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+.shopping-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    text-align: center;    
+}
+.image-item {
+    height: 350px;
+}
+.rating {
+    color: #555151;
+}
+.company-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.current-price {
+    font-weight: 600;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #555151;
+}
+.item-name {
+    color: #797070;
+}
+.btn-add-bag {
+    padding: 10px 100px;
+    border-radius: 25px;
+    font-size: larger;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.btn-add-bag:hover {
+    background-color: rgb(46, 226, 202);
+    color: black;
+    border: 2px solid rgb(46, 226, 202);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    justify-content: space-between;
+    border: 5px solid black;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+.footRightSide {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+
+.footRightSide ul li {
+    list-style-type: none;
+}
+.last-line {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: aliceblue;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .shopping-items {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        text-align: center;
+    }
+    .menu-icon{
+        display: block;
+    }
+    nav ul li button {
+        padding: 10px 50px;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+
+
+
+@media  screen and (max-width: 480px) {
+    .shopping-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+    nav {
+        padding: 10px 20px;
+    }
+    .hero-title {
+        font-size: 3rem;
+        padding-top: 200px;
+    }
+    .hero-description {
+        font-size: medium;    
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .footRightSide {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
